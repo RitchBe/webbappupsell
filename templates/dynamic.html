@@ -163,6 +163,16 @@
             <div class="Polaris-Tabs__Wrapper">
                 <ul role="tablist" class="Polaris-Tabs">
                     <li class="Polaris-Tabs__TabContainer" role="presentation"><button id="combo" role="tab"
+                            type="button" tabindex="-1" class="Polaris-Tabs__Tab tab-custom Polaris-Tabs__Tab--selected"
+                            aria-selected="false" aria-controls="combo-content" aria-label="Combo"
+                            onClick="tabShow(event, 'combo-content')"><span
+                                class="Polaris-Tabs__Title  ">Combo</span></button></li>
+                    <li class="Polaris-Tabs__TabContainer" role="presentation"><button id="with-customers" role="tab"
+                            type="button" tabindex="0" class="Polaris-Tabs__Tab  tab-custom" aria-selected="true"
+                            aria-controls="with-customers-content"
+                            onClick="tabShow(event, 'with-customers-content')"><span class="Polaris-Tabs__Title">With
+                                Customers</span></button></li>
+                    <li class="Polaris-Tabs__TabContainer" role="presentation"><button id="most-sold" role="tab"
                             type="button" tabindex="-1" class="Polaris-Tabs__Tab tab-custom" aria-selected="false"
                             aria-controls="combo-content" aria-label="Combo"
                             onClick="tabShow(event, 'combo-content')"><span class="Polaris-Tabs__Title" ">Combo Matrix</span></button></li>
@@ -192,8 +202,7 @@
                                 class="Polaris-Tabs__Title">Match a Product</span></button></li>
                 </div>
             </div>
-            <div class="Polaris-Tabs__Panel Polaris-Tabs__Panel--hidden" id="combo-content" role="tabpanel"
-                aria-labelledby="Combo" tabindex="-1">
+            <div class="Polaris-Tabs__Panel " id="combo-content" role="tabpanel" aria-labelledby="Combo" tabindex="-1">
                 <div class="Polaris-Card__Section">
                     <div class="tab-info">
                         <div class="Polaris-Card__SectionHeader">
